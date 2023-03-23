@@ -1,5 +1,7 @@
 const mainCards = document.querySelector('main-cards')
 const mainUl = document.querySelector('.main-ul')
+const inputSearch = document.querySelector('.search-input')
+
 
 let productsData = []
 let countProductCart = 0
@@ -109,5 +111,6 @@ function productInMyCart(product){
     cartLiProd.append(cartImageProd, cartTitleProd, cartValueProd, cartValueProd, cartButttonProd)
     return cartLiProd
 }
+
 
 renderAllProducts(data)
